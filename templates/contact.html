@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock title %}
+
+
+
+
+{% block body %}
+
+<div class="container-fluid px-0 ">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/img/contact.jpeg" class="d-block w-100" alt="..." />
+        <h1 style="
+            color: whitesmoke;
+            font-size: 50px;
+            position: absolute;
+            top: 550px;
+          ">
+          <b>Contact Us</b>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4 mt-6">
+
+    <form method="post" action="/contact/">
+      {% csrf_token %}
+    <div class="input-group">
+      <span class="input-group-text">First and last name</span>
+      <input id="fname" name="fname" type="text" aria-label="First name" class="form-control" />
+      <input id="lname" name="lname" type="text" aria-label="Last name" class="form-control" />
+    </div>
+
+    <div class="form-floating mb-3 mt-4">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" />
+      <label for="floatingInput">Email address</label>
+    </div>
+  
+    <div class="form-floating mb-3">
+      <input type="phone" class="form-control" id="phone" name="phone" placeholder="name@example.com" />
+      <label for="phone">Phone Number</label>
+    </div>
+  
+    <div class="row g-3">
+      <div class="col-sm-7">
+        <input type="text" class="form-control" placeholder="City" aria-label="City" name="city" />
+      </div>
+      <div class="col-sm">
+        <input type="text" class="form-control" placeholder="State" aria-label="State" name="state" />
+      </div>
+      <div class="col-sm">
+        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip" name="pincode" />
+      </div>
+    </div>
+  
+    <div class="form-floating mt-4">
+      <textarea name="desc" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+        style="height: 200px"></textarea>
+      <label for="desc">Wanna say something....</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+  </form>
+
+</div>
+
+{% endblock body %}

@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+    <div class="container-fluid px-0">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/static/img/cr1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/static/img/cr2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/static/img/cr3.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <hr>
+    <div style="width: 100%; text-align: center;" class="container"><b>Select form the folowing options</b></div>
+    <div class="card-group my-3">
+        <div class="card mx-2">
+          <img src="/static/img/card_punch.jpeg" alt="punch img">
+      
+          <div class="card-body">
+            <h5 class="card-title">Punch</h5>
+            <p class="card-text">Punching forces in amateur boxing are around 2500 N. If you weigh 70 kg (11 stone or 154 lbs), you'll exert about 700 N of force on the ground just stood still. That makes punching force about 3.5 times body mass.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card mx-2">
+          <img src="/static/img/card_kick.jpeg" alt="kick img">
+      
+          <div class="card-body">
+            <h5 class="card-title">Kick</h5>
+            <p class="card-text">An average kick for an adult delivers around 1,000 pounds of force. Experts in martial arts are able to deliver as much as a ton of force, but this is the result of years of training and specifically utilized skills.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card mx-2">
+          <img src="/static/img/pandk.png" alt="Combo img">
+      
+          <div class="card-body">
+            <h5 class="card-title">Combo</h5>
+            <p class="card-text">A striking combination also known as a combo – is typically a combination of strikes which is made up of both punches and kicks. A punching combo would be punches only, a kicking combo would be kicks only.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+
+
+{% endblock body %}
+ 
